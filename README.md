@@ -4,9 +4,9 @@
 
 ---
 
-## 🚀 Sobre o projeto
+## 🚀 Sobre o Projeto
 
-INO-Predict Express é uma aplicação desenvolvida pela **INOINVEST** para fornecer previsões estatísticas e ferramentas exclusivas para jogadores do Aviator e de outras plataformas de apostas. A plataforma oferece recursos inovadores com foco em resultados e segurança para os usuários.
+**INO-Predict Express** é uma aplicação desenvolvida pela **INOINVEST** que oferece previsões estratégicas e ferramentas inteligentes para apostadores do Aviator e outras plataformas. A proposta é fornecer análises estatísticas, pacotes personalizáveis e segurança no uso, ajudando o usuário a tomar decisões mais informadas.
 
 ---
 
@@ -22,42 +22,42 @@ INO-Predict Express é uma aplicação desenvolvida pela **INOINVEST** para forn
 
 ---
 
-## 🌍 Público-alvo
+## 🌍 Público-Alvo
 
-Apostadores que buscam aumentar suas chances com ajuda de tecnologia e análise inteligente, especialmente usuários da casa **Elephant Bet**, mas também de outras plataformas de apostas.
+Apostadores que desejam aumentar suas chances com auxílio de tecnologia e inteligência estatística — especialmente usuários da **Elephant Bet**, mas também compatível com outras casas de apostas online.
 
 ---
 
-## 🔧 Tecnologias utilizadas
+## 🔧 Tecnologias Utilizadas
 
 - Node.js (backend)
 - JavaScript
 - HTML/CSS
-- Adalo (para app funcional)
-- GitHub (para controle de versão)
+- Adalo (aplicativo funcional)
+- GitHub (controle de versão)
 
 ---
 
-## 📥 Como contribuir
+## 📥 Como Contribuir
 
-Se quiser contribuir com melhorias, correções ou sugestões:
 1. Faça um fork do repositório
-2. Crie uma branch com sua feature: `git checkout -b minha-feature`
-3. Faça commit das suas mudanças: `git commit -m 'minha feature'`
-4. Faça push para a branch: `git push origin minha-feature`
-5. Abra um Pull Request
+2. Crie uma branch: `git checkout -b minha-feature`
+3. Faça commit: `git commit -m 'minha feature'`
+4. Faça push: `git push origin minha-feature`
+5. Abra um **Pull Request**
 
 ---
 
 ## 🧾 Licença
 
-Este projeto é privado e gerido por INOINVEST. O uso comercial, modificação ou redistribuição não autorizada não é permitida sem aprovação.
+Este projeto é **privado** e gerenciado pela **INOINVEST**.  
+O uso comercial, cópias ou redistribuição não são permitidos sem autorização formal.
 
 ---
 
 ## 📫 Contato
 
-- E-mail: florentinoinocerto@gmail.com  
-- WhatsApp: +244 955 740 923  
-- Empresa: INOINVEST  
-- Ano: 2025
+- 📧 E-mail: florentinoinocerto@gmail.com  
+- 📱 WhatsApp: +244 955 740 923  
+- 🏢 Empresa: INOINVEST  
+- 📅 Ano: 2025
