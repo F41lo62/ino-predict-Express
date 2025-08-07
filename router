@@ -1,0 +1,39 @@
+// routes/predict.js
+const express = require('express');
+const router = express.Router();
+
+// Rota para previsão normal
+router.post('/normal', (req, res) => {
+  const saldo = Number(req.body.saldo);
+  let valor = 200;
+
+  if (saldo >= 5000) valor = 500;
+  else if (saldo >= 2500) valor = 300;
+
+  const resposta = {
+    tipo: 'Previsão Normal',
+    valor: `${valor} Kz`,
+    mensagem: 'Previsão pronta para usar com base no seu saldo.'
+  };
+
+  res.json(resposta);
+});
+
+// Rota para previsão "Melhor Momento" (Premium)
+router.post('/melhor-momento', (req, res) => {
+  const saldo = Number(req.body.saldo);
+  let valor = 500;
+
+  if (saldo >= 5000) valor = 800;
+  else if (saldo >= 2500) valor = 650;
+
+  const resposta = {
+    tipo: 'Melhor Momento (Premium)',
+    valor: `${valor} Kz`,
+    mensagem: 'Previsão premium gerada com base no momento ideal.'
+  };
+
+  res.json(resposta);
+});
+
+module.exports = router;
