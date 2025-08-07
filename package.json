@@ -1,0 +1,12 @@
+{
+  "name": "ino-predict-express",
+  "version": "1.0.0",
+  "description": "Plataforma de previsões para o jogo Aviator",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
