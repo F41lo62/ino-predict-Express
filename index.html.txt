@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>INO Predict Auto Play EXPRESS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  body {
+    margin: 0; padding: 0; font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1E3A8A, #F9D976);
+    color: #f0f0f0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-shadow: 0 0 8px #FFD700aa;
+  }
+  .counters {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .counter {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px 35px;
+    width: 180px;
+    box-shadow: 0 0 10px #00000055;
+  }
+  .counter .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .counter .number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .counter .label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ddd;
+  }
+
+  /* Colors for each counter */
+  .gold {
+    color: #FFD700;
+    text-shadow: 0 0 8px #FFD700aa;
+  }
+  .blue {
+    color: #3B82F6;
+    text-shadow: 0 0 8px #3B82F6aa;
+  }
+  .green {
+    color: #10B981;
+    text-shadow: 0 0 8px #10B981aa;
+  }
+  /* Pulsing animation for accuracy */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  .pulse {
+    animation: pulse 2s infinite;
+    display: inline-block;
+  }
+  /* Responsive */
+  @media (max-width: 500px) {
+    .counter {
+      width: 140px;
+      padding: 20px 25px;
+    }
+    .counter .number {
+      font-size: 1.75rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Confiança que você pode ver em números</h1>
+
+<div class="counters">
+  <div class="counter gold">
+    <div class="icon">🔮</div>
+    <div id="predictions" class="number">0</div>
+    <div class="label">Previsões entregues</div>
+  </div>
+  <div class="counter blue">
+    <div class="icon">👥</div>
+    <div id="users" class="number">0</div>
+    <div class="label">Usuários ativos agora</div>
+  </div>
+  <div class="counter green">
+    <div class="icon">🎯</div>
+    <div id="accuracy" class="number pulse">0%</div>
+    <div class="label">Taxa de acerto</div>
+  </div>
+</div>
+
+<script>
+  // Predições - contador progressivo até 3215, +1 a cada 3 seg
+  let predictionsCount = 0;
+  const predictionsTarget = 3215;
+  const predictionsEl = document.getElementById('predictions');
+  function incrementPredictions() {
+    if(predictionsCount < predictionsTarget) {
+      predictionsCount++;
+      predictionsEl.textContent = predictionsCount.toLocaleString();
+    }
+  }
+  setInterval(incrementPredictions, 3000);
+
+  // Usuários ativos - começa em 247, varia aleatoriamente +-10 a cada 5 seg
+  let usersCount = 247;
+  const usersEl = document.getElementById('users');
+  function varyUsers() {
+    const variation = Math.floor(Math.random() * 21) - 10; // -10 a +10
+    usersCount += variation;
+    if(usersCount < 200) usersCount = 200;
+    if(usersCount > 300) usersCount = 300;
+    usersEl.textContent = usersCount.toLocaleString();
+  }
+  usersEl.textContent = usersCount.toLocaleString();
+  setInterval(varyUsers, 5000);
+
+  // Taxa de acerto - fixa em 92%, com pulso
+  const accuracyEl = document.getElementById('accuracy');
+  accuracyEl.textContent = "92%";
+</script>
+
+</body>
+</html>
